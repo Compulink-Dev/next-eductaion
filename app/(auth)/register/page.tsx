@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import RegisterForm from '../_components/register-form '
 
 function Register() {
     return (
-        <div>
-            <RegisterForm />
-        </div>
+        <Suspense>
+            <div>
+                <RegisterForm />
+            </div>
+        </Suspense>
     )
 }
 
