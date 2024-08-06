@@ -1,11 +1,14 @@
 import React from 'react'
 import LoginForm from '../_components/login-form'
+import { Suspense } from 'react'
 
 function Login() {
     return (
-        <div className=''>
-            <LoginForm />
-        </div>
+        <Suspense>
+            <div className=''>
+                <LoginForm />
+            </div>
+        </Suspense>
     )
 }
 
